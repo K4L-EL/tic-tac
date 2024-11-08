@@ -16,10 +16,10 @@ export const BackgroundScene = () => {
   const orbitRadius = 10;
 
   // Load the custom sun, planets, and rocket models
-  const sunModel = useGLTF('/src/assets/sun_gltf/scene.gltf');
-  const planetModel = useGLTF('/src/assets/planet3.glb');
-  const planet4Model = useLoader(FBXLoader, '/src/assets/planet4/source/planet4.fbx');
-  const rocketModel = useGLTF('/src/assets/toy_rocket_gltf/scene.gltf');
+  const sunModel = useGLTF('/sun_gltf/scene.gltf');
+  const planetModel = useGLTF('/planet3.glb');
+  const planet4Model = useLoader(FBXLoader, '/planet4/source/planet4.fbx');
+  const rocketModel = useGLTF('/toy_rocket_gltf/scene.gltf');
 
   // Load textures for the moon
   const moonTexture = new THREE.TextureLoader().load('path/to/moon_texture.jpg');
@@ -126,6 +126,6 @@ export const BackgroundScene = () => {
 };
 
 // Preload the GLTF models for performance optimization
-useGLTF.preload('/src/assets/sun_gltf/scene.gltf');
-useGLTF.preload('/src/assets/planet3.glb');
-useGLTF.preload('/src/assets/toy_rocket_gltf/scene.gltf');
+useGLTF.preload('/sun_gltf/scene.gltf');
+useGLTF.preload('/planet3.glb');
+useGLTF.preload('/toy_rocket_gltf/scene.gltf');

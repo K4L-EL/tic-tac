@@ -1,12 +1,12 @@
 import { Canvas } from '@react-three/fiber';
-import { BackgroundScene } from './components/layout/BackgroundScene';
-import { ThreeDGame } from './components/organisms/ThreeDGame';
-import { ThreeDGameUI } from './components/organisms/ThreeDGameUI';
+import { BackgroundScene } from '../src/components/layout/BackgroundScene';
+import { ThreeDGame } from '../src/components/organisms/ThreeDGame';
+import { ThreeDGameUI } from '../src/components/organisms/ThreeDGameUI';
 import { useState } from 'react';
-import { handleSquareClick } from './util/handleSquareClick';
-import { advanceTurn } from './util/advanceRuen';
-import { resetGame } from './util/restartGame';
-import { handleAbilitySelect } from './util/handleAbilitySelect';
+import { handleSquareClick } from '../src/util/handleSquareClick';
+import { advanceTurn } from '../src/util/advanceRuen';
+import { resetGame } from '../src/util/restartGame';
+import { handleAbilitySelect } from '../src/util/handleAbilitySelect';
 
 type Player = 'X' | 'O';
 
